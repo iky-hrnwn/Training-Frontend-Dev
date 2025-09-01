@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav">
+                <h1 class="site-logo">Coffee House</h1>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                 <!-- Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="site-main">
+        
+        <!-- Hero Section -->
+         <section id="hero" class="hero">
+            <div class="container">
+                <h2 class="hero_title">Welcome to Coffee House Website.</h2>
+                <p class="hero_subtitle">Kami menyediakan kopi untuk anda seruput.</p>
+                <a href="#services" class="btn btn--primary">Pelajari Lebih Lanjut.</a>
+            </div>
+         </section>
+
+         <!-- Services Section -->
+          <section id="services" class="services reveal">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services-list">
+                    <article class="service-card">
+                        <h3 class="service-card__title">Arabica</h3>
+                        <p class="service-card__desc">Dikenal sebagai salah satu jenis biji kopi terpopuler, biji Arabica adalah biji kopi berkualitas tinggi.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title">Robusta</h3>
+                        <p class="service-card__desc">Robusta merupakan jenis biji kopi yang paling banyak diproduksi kedua setelah Arabica. Kopi satu ini terkenal dengan cita rasanya yang kuat dan pekat.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title">Liberica</h3>
+                        <p class="service-card__desc">Liberica ternyata merupakan salah satu jenis biji kopi yang paling sulit ditemukan. Ukurannya lebih besar daripada biji kopi lainnya dan bentuk Liberica juga tidak beraturan.</p>
+                    </article>
+                </div>
+            </div>
+          </section>
+
+          <!-- About Section -->
+           <section id="about" class="about reveal">
+             <div class="container">
+                <h2 class="section-title">About</h2>
+                <p>Di Coffee House kami menyediakan biji kopi pilihan untuk pecinta kopi.</p>
+             </div>
+           </section>
+
+           <!-- Contact Section -->
+            <section id="contact" class="contact reveal">
+                <div class="container">
+                    <h2 class="section-title">Contact</h2>
+                    <form class="contact-form">
+                        <input type="text" name="name" placeholder="Nama" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Isi masukan..." required></textarea>
+                        <button type="submit" class="btn btn--secondary">Kirim</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Coffee House. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+  <!-- JS untuk animasi scroll -->
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    window.addEventListener("scroll", () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+      }
+    });
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });    
+  </script>    
+</body>
+
+</html>
