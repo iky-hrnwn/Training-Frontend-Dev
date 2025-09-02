@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: #f8f7f3;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+/* Header / Navbar */
+.site-header {
+    margin: 1.3rem 0;
+}
+
+.site-header .logo {
+    font-size: 1.5rem;
+}
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    list-style: none;
+}
+.site-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hero */
+.hero {
+    padding: 4.3rem 0;
+    padding-top: 2rem;
+}
+
+.hero-grid {
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 850px;
+    gap: 13rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+.shape-line {
+    position: absolute;
+    background-color: #fdb144;
+    width: 60px;
+    left: 3.1rem;
+    height: 9px;
+    top: 19.7rem;
+}
+
+.hero-desc h3 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    padding-top: 0.7rem;
+}
+
+.hero-desc .hero-desc-job {
+    padding: 1.4rem 0;
+    text-align: justify;
+}
+
+.hero-profile-pict {
+    z-index: -1;
+    width: 20rem;
+    height: auto;
+    position: absolute;
+    left: 12rem;
+    top: 2.9rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn--primary {
+    color: #fdb144;
+    padding: 0;
+}
+
+/* About */
+.about {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #fdb144;
+    color: white;
+}
+
+/* Contact */
+.contact {
+    padding: 3rem 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    cursor: pointer;
+    border: none;
+}
+
+/* Footer */
+.site-footer {
+    background: #fdb242;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
