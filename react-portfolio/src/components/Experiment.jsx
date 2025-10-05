@@ -5,13 +5,13 @@ import Model from "./Model";
 export default function Experiment() {
     return (
         <section className="px-[53px] h-screen">
-            <h3 className="text-[#8F8686] text-2xl mb-3">//Experiment</h3>
+            <h3 className="text-[#8F8686] text-2xl mb-3">//experiment</h3>
             <h2 className="font-bold text-4xl mb-10">I’m trying using threeJS for use 3D Object.</h2>
 
             {/* Canvas untuk 3D */}
             <div className="w-full h-[500px] rounded-[20px] overflow-hidden">
                 <Canvas
-                    camera={{ position: [0, 0, 5] }}
+                    camera={{ position: [0, 0, 1] }}
                     style={{ background: "#3D79F2" }}
                     >
                     <ambientLight intensity={1} />

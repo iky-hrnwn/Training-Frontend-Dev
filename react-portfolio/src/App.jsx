@@ -1,14 +1,22 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Experiment from "./components/Experiment";
+import Experience from "./components/Experience";
+import Project from "./components/Project";
+import MarqueeText from "./components/MarqueeText";
+import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <section className="overflow-x-hidden text-[#262424]">
+    <div className=" text-[#262622] bg-[#262622]">
       <Hero />
       <About />
-      <Experiment />
-    </section>
+      <MarqueeText />
+      <Experience />
+      <Project />
+      <Form />
+      <Footer />
+    </div>
   );
 }
 

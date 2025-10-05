@@ -2,26 +2,22 @@ export default function Navbar() {
     return (
       <nav className="flex justify-between items-center py-5">
         {/* Logo */}
-        <div className="font-bold leading-7">
-          <h1 className="text-[20px]">Dicki Hernawan</h1>
-          <h2 className="text-[16px] text-[#474444]">Frontend Dev</h2>
+        <div className="font-bold leading-6">
+          <h2 className="text-[20px] font-bold">DICKI HERNAWAN</h2>
+          <h2 className="text-[16px] text-[#8C8C88] font-bold">FRONTEND DEV</h2>
         </div>
   
         {/* Menu */}
-        <ul className="flex gap-7 text-[14px] font-medium">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul className="flex gap-7 text-[14px] font-medium text-[#3F403B]">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
   
         {/* Button */}
-        <div className="flex gap-2 items-center px-5 py-2 bg-white rounded-4xl">
-            <div className="w-2 h-2 rounded-full bg-[#2DA667] z-10"></div>
-            <span className="absolute w-3 h-3 rounded-full bg-[#2DA667] opacity-75 animate-ping"></span>
-            <h1 className="text-[14px] font-bold">Available for work</h1>
-        </div>
+        <h1 className="text-[14px] font-bold">AVAILABLE FOR WORK</h1>
       </nav>
     );
   }
