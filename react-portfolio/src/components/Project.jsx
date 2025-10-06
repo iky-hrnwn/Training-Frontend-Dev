@@ -9,7 +9,6 @@ export default function Project() {
       <h2 className="font-bold text-4xl">A selection of works I’ve built and explored.</h2>
 
       <ProjectCard />
-      <Marquee />
     </section>
   );
 }
