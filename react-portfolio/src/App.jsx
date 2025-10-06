@@ -1,3 +1,5 @@
+// App.jsx
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -8,7 +10,11 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className=" text-[#262622] bg-[#262622]">
+    <div className="text-[#262622] bg-[#262622]">
+      {/* Background strip */}
+      <div className="absolute bg-[#F2F2EB] h-[90px] w-full"></div>
+
+      <Navbar />
       <Hero />
       <About />
       <MarqueeText />

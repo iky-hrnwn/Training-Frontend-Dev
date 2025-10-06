@@ -1,3 +1,4 @@
+// ProjectCard.jsx
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -5,18 +6,9 @@ import { Navigation } from "swiper/modules";
 
 export default function ProjectCard() {
   const projects = [
-    {
-      title: "Canon 77D Landing Page",
-      image: "/assets/img1.jpg",
-    },
-    {
-      title: "LinkedIn Fundraising Tool",
-      image: "/assets/img2.jpg",
-    },
-    {
-      title: "Portfolio Website",
-      image: "/assets/img3.jpg",
-    },
+    { title: "Canon 77D Landing Page", image: "/assets/img1.jpg" },
+    { title: "LinkedIn Fundraising Tool", image: "/assets/img2.jpg" },
+    { title: "Portfolio Website", image: "/assets/img3.jpg" },
   ];
 
   return (
