@@ -4,7 +4,7 @@ import Arrow from "./Arrow";
 
 export default function Navbar() {
   return (
-      <nav>
+      <nav className="text-[#262622]">
         <div className="container mx-auto px-3 py-2 ">
           <div className="flex justify-between items-center">
             {/* Logo */}

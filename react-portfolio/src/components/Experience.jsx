@@ -24,26 +24,29 @@ export default function Experience() {
   ];
 
   return (
-    <section className="px-[53px] h-auto text-[#F2F2EB]">
-      <h3 className="text-2xl mb-3">//my-experience</h3>
-      <div className="flex justify-between">
-        <div className="flex">
-          <h2 className="font-bold text-4xl basis-120">
-            From learning to building, here’s my path.
-          </h2>
-        </div>
-
-        {/* Cards */}
-        <div className="basis-170 py-20">
-          {data.map((item, index) => (
-            <ExperienceCard
-              key={index}
-              title={item.title}
-              date={item.date}
-              role={item.role}
-              desc={item.desc}
-            />
-          ))}
+    <section className="h-screen bg-[#262622] text-[#F2F2EB] uppercase">
+      <div className="container mx-auto px-3 py-2">
+        <div className="flex flex-col">
+          <div className="font-bold text-8xl py-25 text-center">EXPERIENCE</div>
+          <p className="font-bold text-2xl uppercase">
+            From learning to<br />building, here’s my path.
+          </p>
+          <div className="flex justify-end">
+            {/* Line */}
+            <div className="w-px mx-8 bg-[#F6F6ED] border-0 "></div>
+            {/* Cards */}
+            <div className="">
+              {data.map((item, index) => (
+                <ExperienceCard
+                  key={index}
+                  title={item.title}
+                  date={item.date}
+                  role={item.role}
+                  desc={item.desc}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
