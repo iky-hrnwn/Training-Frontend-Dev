@@ -4,7 +4,7 @@ import ExperienceCard from "./ExperienceCard";
 export default function Experience() {
   const data = [
     {
-      title: "Frontend Dev",
+      title: "Frontend Developer",
       date: "May 2024 - Present",
       role: "Fresh Graduate",
       desc: "Graduate at Telkom University, trying to become a developer starting as a frontend.",

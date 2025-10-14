@@ -11,7 +11,7 @@ export default function Hero() {
       </div>
 
       {/* Information of User */}
-      <div className="grid grid-flow-col gap-4 pt-4 justify-i">
+      <div className="grid grid-flow-col md:grid-flow-col gap-4 pt-45 md:pt-32 lg:pt-4">
         <div className="font-semibold justify-self-start self-end text-xs md:text-[14px] lg:text-[16px]">BASED IN INDONESIA</div>
 
         <div className="justify-self-end">

@@ -1,14 +1,24 @@
-// Project.jsx
-import Marquee from "./Marquee";
 import ProjectCard from "./ProjectCard";
 
 export default function Project() {
+  const data = [
+    {
+      projImage: "./assets/ui.examp.png",
+      title: "WEBSITE COMPANY PROFILE",
+      role: "FRONTEND DEVELOPER",
+      tools: "HTML, CSS, JS, tailwindcss, Reactjs",
+      desc: "completed create ui and implemented to website with reactjs AND TAILWINDCSS.",
+    },
+  ];
   return (
-    <section className="px-[53px] h-screen py-20 bg-[#F2F2EB]">
-      <h3 className="text-[#8F8686] text-2xl mb-3">//featured-projects</h3>
-      <h2 className="font-bold text-4xl">A selection of works I’ve built and explored.</h2>
-
+    <section className="h-screen bg-[#262622] text-[#F2F2EB] uppercase">
+      <div className="container mx-auto px-3 py-2 pt-20">
+      <div className="font-bold text-8xl py-25 text-center">WORK</div>
+      <p className="font-bold text-2xl uppercase">
+        Selected works that merge clean UI with<br />robust frontend architecture.
+      </p>
       <ProjectCard />
+      </div>
     </section>
   );
 }

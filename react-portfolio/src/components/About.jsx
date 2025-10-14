@@ -8,7 +8,7 @@ export default function About() {
           <div className="font-bold text-8xl py-2 uppercase">
             I love crafting interactive digital solutions that combine design and technology.
           </div>
-          <p className="pl-65 pr-32 tracking-widest py-2 font-light text-xs text-justify uppercase">
+          <p className="pl-65 pr-32 tracking-widest py-2 font-light text-xl text-justify uppercase">
             Graduated in Multimedia at Telkom University with a strong passion for web and app development, I initially wanted to pursue a career in game development, but due to certain limitations, I decided to focus on becoming a Web Developer first. With a deep interest in technology, I am committed to continuous learning until I master various areas of programming.
           </p>
         </div>
